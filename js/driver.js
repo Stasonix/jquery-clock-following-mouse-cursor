@@ -32,6 +32,8 @@ $('#datepick').datetimepicker({
 				someDay.setMinutes(mydate.minutes);
 				someDay.setMonth(mydate.month);
 				
+				$.cookie( 'wDay' , wDay );				
+				
 				/* set cookie */
 				$.cookie('date', dateText );
 				
@@ -70,6 +72,7 @@ function startSec() {
 		month   = someDay.getMonth();
 		year   = someDay.getFullYear();
 
+		
 	}
 
 secInterval = setInterval( function() {
@@ -162,7 +165,6 @@ secInterval = setInterval( function() {
 	$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
 	
 	
-	
 	// Output the day, date, month and year    
     $('#Date').html(ruDays[wDay] + " " + aDay + ' ' + ruMonth[month] + ' ' + year);
 	
@@ -188,6 +190,7 @@ $('table.ui-datepicker-calendar tr:first-child th span').live('click',function()
 		case "Чт": wDay = 4; break;
 		case "Пт": wDay = 5; break;
 		case "Сб": wDay = 6; break;
+	
 	}
 	
 	$.cookie( 'wDay' , wDay );
