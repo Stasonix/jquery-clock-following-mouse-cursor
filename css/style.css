@@ -1,0 +1,75 @@
+﻿body{
+	 background:#202020;
+	 font:bold 12px Arial, Helvetica, sans-serif;
+	 margin:0;
+	 padding:0;
+	 min-width:960px;
+	 color:#bbbbbb; 
+}
+
+a { 
+	text-decoration:none; 
+	color:#00c6ff;
+}
+
+h1 {
+	font: 4em normal Arial, Helvetica, sans-serif;
+	padding: 20px;	margin: 0;
+	text-align:center;
+}
+
+h1 small{
+	font: 0.2em normal  Arial, Helvetica, sans-serif;
+	text-transform:uppercase; letter-spacing: 0.2em; line-height: 5em;
+	display: block;
+}
+
+h2 {
+    font-weight:700;
+    color:#bbb;
+    font-size:20px;
+}
+
+h2, p {
+	margin-bottom:10px;
+}
+
+.container {width: 960px; margin: 0 auto; overflow: hidden;}
+
+.clock {width: 300px; margin:0 auto; padding:30px; border:1px solid #333; color:#fff; }
+
+#Date { font-family:  Arial, Helvetica, sans-serif; font-size:20px; text-align:center; text-shadow:0 0 5px #00c6ff; }
+
+ul { width:300px; margin:0 auto; padding:0px; list-style:none; text-align:center; }
+ul li { display:inline; font-size:4em; text-align:center; font-family: Arial, Helvetica, sans-serif; text-shadow:0 0 5px #00c6ff; }
+
+#point { position:relative; -moz-animation:mymove 1s ease infinite; -webkit-animation:mymove 1s ease infinite; padding-left:10px; padding-right:10px; }
+
+@-webkit-keyframes mymove 
+{
+0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+50% {opacity:0; text-shadow:none; }
+100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	
+}
+
+
+@-moz-keyframes mymove 
+{
+0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+50% {opacity:0; text-shadow:none; }
+100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	
+}
+
+#mydiv {
+position:absolute; visibility: hidden;
+z-index:999;
+}
+
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+table.ui-datepicker-calendar tr th span.highlight { background: red; }
